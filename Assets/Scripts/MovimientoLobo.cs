@@ -60,12 +60,12 @@ public class MovimientoLobo : MonoBehaviour
             }
             
         }
-
+        if(tocandoSuelo==false){
         if(Input.GetKey(KeyCode.DownArrow)){
             transform.Translate(0f,-speed*Time.deltaTime,0f);
             //GetComponent<Animator>().SetBool("agacharse",true);
         }
-
+        }
 
         if (Input.GetKeyDown(KeyCode.DownArrow)){// Pulsamos la tecla flecha abajo
             caer=true;
